@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  &:focus {
+    outline: none;
+  }
+}
+
+* {
+  font-family: monaco, courier;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 1rem;
+  color: rebeccapurple;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+  // @media (min-width: 768px) {
+  //   background: palegreen;
+  // }
+}
+
+.filters {
+  margin-right: 4rem;
+  p {
+    cursor: pointer;
+    &:hover {
+      background: gold;
+    }
+  }
+}
+
+svg {
+  border: 2px solid #666;
+  path,
+  circle,
+  polygon {
+    fill: rebeccapurple;
+  }
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
